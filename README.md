@@ -12,7 +12,7 @@ to start all you need to do is :
 ```bash
     .\bin\server.exe
 
-    // then run in a seperate terminal
+    # then run in a seperate terminal
 
     .\bin\client.exe -msg="whatever you want"
 ```
