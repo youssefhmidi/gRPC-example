@@ -29,8 +29,8 @@ func main() {
 	other["sent"] = "today"
 
 	sendMsg := services.ObjMessage{
-		ID: 1,
-		Msg: *msg,
+		ID:   1,
+		Msg:  *msg,
 		Data: other,
 	}
 	resp, err := client.Send(context.Background(), &sendMsg)
@@ -39,5 +39,5 @@ func main() {
 		return
 	}
 
-	log.Printf("Response : %s\n", resp.Res);
+	log.Printf("Response : %s\n", resp.Res)
 }
