@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option go_package = "github.com/youssefhmidi/gRPC-example/services;services";
+
+message ObjMessage {
+	int32 ID = 1;
+	string msg = 2;
+
+	map<string, string> data = 3;
+}
+
+message Response {
+	string res = 1;
+}
+
+service MsgServer {
+	rpc Send(ObjMessage) returns(Response);
+}
